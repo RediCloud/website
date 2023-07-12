@@ -946,7 +946,8 @@ Banner Style
 }
 
 .main-banner .right-image img {
-  max-width: 710px;
+  max-width: 100%;
+  width: 900px;
 }
 
 .main-banner .left-content .white-button a {
@@ -956,27 +957,27 @@ Banner Style
 
 /* 
 ---------------------------------------------
-Services Style
+features Style
 --------------------------------------------- 
 */
 
-.services {
+.features {
   padding-top: 130px;
   position: relative;
 }
 
-.services  .section-heading p {
+.features  .section-heading p {
   margin-top: 10px;
   margin-left: 18%;
   margin-right: 18%;
 }
 
-.services .container-fluid {
+.features .container-fluid {
   padding-left: 65px;
   padding-right: 65px;
 }
 
-.services:after {
+.features:after {
   content: '';
   background-image: url(../images/services-left-dec.png);
   background-repeat: no-repeat;
@@ -988,7 +989,7 @@ Services Style
   z-index: 0;
 }
 
-.services:before {
+.features:before {
   content: '';
   background-image: url(../images/services-right-dec.png);
   background-repeat: no-repeat;
@@ -1000,16 +1001,16 @@ Services Style
   z-index: 0;
 }
 
-.services .section-heading {
+.features .section-heading {
   text-align: center;
   margin-bottom: 80px;
 }
 
-.services .section-heading .line-dec {
+.features .section-heading .line-dec {
   margin: 0 auto;
 }
 
-.service-item {
+.feature-item {
   position: relative;
   z-index: 1;
   padding: 30px;
@@ -1020,7 +1021,7 @@ Services Style
   transition: all .3s;
 }
 
-.service-item .icon {
+.feature-item .icon {
   margin-left: 0px;
   margin-bottom: 30px;
   background-repeat: no-repeat;
@@ -1029,22 +1030,22 @@ Services Style
   transition: all .3s;
 }
 
-.service-item h4 {
+.feature-item h4 {
   transition: all .3s;
   font-size: 20px;
   font-weight: 700;
   margin-bottom: 15px;
 }
 
-.service-item p {
+.feature-item p {
   transition: all .3s;
   font-size: 15px;
   margin-bottom: 20px;
 }
 
-.service-item:hover h4,
-.service-item:hover p,
-.service-item:hover .text-button a {
+.feature-item:hover h4,
+.feature-item:hover p,
+.feature-item:hover .text-button a {
   color: #fff;
 }
 
@@ -1081,7 +1082,7 @@ Services Style
   background-image: url(../images/service-icon-hover-04.png);
 }
 
-.service-item:hover {
+.feature-item:hover {
   background-image: url(../images/service-bg.jpg);
   background-position: right top;
   background-repeat: no-repeat;
@@ -1096,25 +1097,25 @@ About Us
 ---------------------------------------------
 */
 
-.about-us {
+.installation {
   padding-top: 130px;
   position: relative;
 }
 
-.about-us .section-heading {
+.installation .section-heading {
   margin-bottom: 45px;
 }
 
-.about-us .section-heading,
-.about-us .box-item,
-.about-us p,
-.about-us .box-item .gradient-button,
-.about-us .box-item span {
+.installation .section-heading,
+.installation .box-item,
+.installation p,
+.installation .box-item .gradient-button,
+.installation .box-item span {
   position: relative;
   z-index: 1;
 }
 
-.about-us .box-item {
+.installation .box-item {
   box-shadow: 0px 0px 15px rgba(0,0,0,0.07);
   padding: 10px 30px;
   background-color: #fff;
@@ -1122,7 +1123,7 @@ About Us
   margin-bottom: 30px;
 }
 
-.about-us .box-item h4 a {
+.installation .box-item h4 a {
   font-size: 20px;
   font-weight: 700;
   margin-top: 8px;
@@ -1130,31 +1131,30 @@ About Us
   transition: all .3s;
 }
 
-.about-us .box-item p {
+.installation .box-item p {
   margin-bottom: 0px;
 }
 
-.about-us .box-item:hover h4 a {
+.installation .box-item:hover h4 a {
   color: #4b8ef1;
 }
 
-.about-us .gradient-button {
+.installation .gradient-button {
   margin-top: 30px;
   margin-bottom: 10px;
 }
 
-.about-us span {
+.installation span {
   font-size: 14px;
   color: #7a7a7a;
 }
 
-.about-us .right-image {
+.installation .right-image {
   position: relative;
   z-index: 1;
 }
 
-.about-us:after {
-  background-image: url(../images/about-bg.jpg);
+.installation:after {
   width: 777px;
   height: 1132px;
   content: '';
@@ -1319,22 +1319,22 @@ The Clients
 ---------------------------------------------
 */
 
-.pricing-tables {
+.help-tables {
   padding-top: 130px;
 }
 
-.pricing-tables  .section-heading {
+.help-tables  .section-heading {
   text-align: center;
   margin-bottom: 80px;
 }
 
-.pricing-tables  .section-heading p {
+.help-tables  .section-heading p {
   margin-top: 10px;
   margin-left: 18%;
   margin-right: 18%;
 }
 
-.pricing-item-regular {
+.help-item-regular {
   margin-top: 30px;
   box-shadow: 0px 0px 15px rgba(0,0,0,0.07);
   border-radius: 50px;
@@ -1345,29 +1345,29 @@ The Clients
   overflow: hidden;
 }
 
-.pricing-item-regular:before {
+.help-item-regular:before {
   position: absolute;
   top: 0;
   left: 0;
-  background-image: url(../images/regular-table-top.png);
+  background-image: url(../images/pro-table-top.png);
   z-index: 0;
   content: '';
   width: 274px;
   height: 221px;
 }
 
-.pricing-item-regular:after {
+.help-item-regular:after {
   position: absolute;
   bottom: 0;
   right: 0;
-  background-image: url(../images/regular-table-bottom.png);
+  background-image: url(../images/pro-table-bottom.png);
   z-index: 0;
   content: '';
   width: 370px;
   height: 171px;
 }
 
-.pricing-item-regular span.price {
+.help-item-regular span.price {
   font-size: 40px;
   color: #fff;
   position: absolute;
@@ -1377,40 +1377,40 @@ The Clients
   top: 30px;
 }
 
-.pricing-item-regular h4 {
+.help-item-regular h4 {
   font-size: 20px;
   font-weight: 700;
   margin-bottom: 30px;
 }
 
-.pricing-item-regular .icon img {
+.help-item-regular .icon img {
   width: 120px;
   height: 106px;
   margin-bottom: 30px;
 }
 
-.pricing-item-regular ul li {
+.help-item-regular ul li {
   color: #4b8ef1;
   font-size: 15px;
   margin-bottom: 15px;
 }
 
-.pricing-item-regular ul li:last-child {
+.help-item-regular ul li:last-child {
   margin-bottom: 0px;
 }
 
-.pricing-item-regular ul li.non-function {
+.help-item-regular ul li.non-function {
   color: #afafaf;
   text-decoration: line-through;
 }
 
-.pricing-item-regular .border-button {
+.help-item-regular .border-button {
   position: relative;
   z-index: 1;
   margin-top: 40px;
 }
 
-.pricing-item-pro {
+.help-item-pro {
   box-shadow: 0px 0px 15px rgba(0,0,0,0.07);
   border-radius: 50px;
   padding: 120px 30px;
@@ -1420,7 +1420,7 @@ The Clients
   overflow: hidden;
 }
 
-.pricing-item-pro:before {
+.help-item-pro:before {
   position: absolute;
   top: 0;
   left: 0;
@@ -1431,7 +1431,7 @@ The Clients
   height: 251px;
 }
 
-.pricing-item-pro:after {
+.help-item-pro:after {
   position: absolute;
   bottom: 0;
   right: 0;
@@ -1444,7 +1444,7 @@ The Clients
   height: 201px;
 }
 
-.pricing-item-pro span.price {
+.help-item-pro span.price {
   font-size: 40px;
   color: #fff;
   position: absolute;
@@ -1454,34 +1454,34 @@ The Clients
   top: 30px;
 }
 
-.pricing-item-pro h4 {
+.help-item-pro h4 {
   font-size: 20px;
   font-weight: 700;
   margin-bottom: 30px;
 }
 
-.pricing-item-pro .icon img {
+.help-item-pro .icon img {
   width: 120px;
   height: 106px;
   margin-bottom: 30px;
 }
 
-.pricing-item-pro ul li {
+.help-item-pro ul li {
   color: #4b8ef1;
   font-size: 15px;
   margin-bottom: 15px;
 }
 
-.pricing-item-pro ul li:last-child {
+.help-item-pro ul li:last-child {
   margin-bottom: 0px;
 }
 
-.pricing-item-pro ul li.non-function {
+.help-item-pro ul li.non-function {
   color: #afafaf;
   text-decoration: line-through;
 }
 
-.pricing-item-pro .border-button {
+.help-item-pro .border-button {
   position: relative;
   z-index: 1;
   margin-top: 40px;
@@ -2025,35 +2025,35 @@ responsive
     margin-right: 0px;
     margin-bottom: 45px;;
   }
-  .services .naccs .menu div {
+  .features .naccs .menu div {
     font-size: 15px;
     font-weight: 500;
   }
-  .service-item {
+  .feature-item {
     text-align: center;
     margin-bottom: 30px;
   }
-  .about-us .box-item {
+  .installation .box-item {
     text-align: center;
   }
-  .about-us:after {
+  .installation:after {
     display: none;
   }
-  .about-us .gradient-button,
-  .about-us span {
+  .installation .gradient-button,
+  .installation span {
     text-align: center;
     display: block;
   }
-  .about-us .right-image {
+  .installation .right-image {
     margin-top: 30px;
   }
-  .service-item .icon {
+  .feature-item .icon {
     margin: 0 auto 30px auto;
   }
-  .about-us .section-heading {
+  .installation .section-heading {
     text-align: center;
   }
-  .about-us .left-image {
+  .installation .left-image {
     margin-right: 30px;
     margin-left: 30px;
     margin-bottom: 45px;
@@ -2065,7 +2065,7 @@ responsive
   .post-item {
     margin-bottom: 70px;
   }
-  .pricing-item-regular {
+  .help-item-regular {
     margin-bottom: 30px;
   }
   .our-portfolio .owl-nav {
@@ -2133,57 +2133,57 @@ responsive
     margin-bottom: -20px;
     display: block;
   }
-  .service-item {
+  .feature-item {
     text-align: center;
     padding: 30px;
   }
   .menu .thumb span.category {
     display: none;
   }
-  .about-us .right-image {
+  .installation .right-image {
     margin-top: 30px;
   }
-  .service-item .icon {
+  .feature-item .icon {
     float: none;
     margin-right: 0px;
     margin-bottom: 15px;
   }
-  .service-item .right-content {
+  .feature-item .right-content {
     display: inline-block;
   }
-  .services .naccs .menu div .thumb {
+  .features .naccs .menu div .thumb {
     padding: 5px;
   }
-  .services .icon img {
+  .features .icon img {
     margin: 0px;
   }
   .the-clients .nacc .thumb .down-content .right-content {
     margin-left: 0px;
     margin-top: 15px;
   }
-  .services ul.nacc li.active {
+  .features ul.nacc li.active {
     padding: 45px;
   }
-  .services .naccs .menu div  {
+  .features .naccs .menu div  {
     font-size: 0px;
   }
   .the-clients .nacc .thumb .down-content {
     text-align: center;
   }
-  .services ul.nacc li .right-image img {
+  .features ul.nacc li .right-image img {
     float: none;
   }
   .our-portfolio .section-heading,
-  .about-us .section-heading,
-  .about-us .about-item,
-  .about-us p,
-  .about-us .main-green-button {
+  .installation .section-heading,
+  .installation .about-item,
+  .installation p,
+  .installation .main-green-button {
     text-align: center;
   }
   .our-portfolio .section-heading .line-dec {
     margin: 0 auto;
   }
-  .our-services .section-heading {
+  .our-features .section-heading {
     margin-left: 15px;
     margin-right: 15px;
   }
@@ -2209,7 +2209,7 @@ responsive
   .post-item .right-content p {
     display: none;
   }
-  .about-us .about-item {
+  .installation .about-item {
     margin-top: 15px;
   }
   form#contact {
