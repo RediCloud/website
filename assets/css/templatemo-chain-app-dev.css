@@ -1713,12 +1713,12 @@ PopUp
 }
 
 .popupContainer {
-  position: absolute;
-  width: 330px;
+  position: center;
+  width: 35%;
   height: auto;
-  left: 45%;
-  top: 60px;
   background: #FFF;
+  padding: 7px 15px !important;
+  border-radius: 17px;
 }
 
 .btn {
