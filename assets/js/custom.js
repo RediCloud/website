@@ -25,48 +25,22 @@
       margin:0,
       responsive:{ 
           1200:{
-              items:5
+              items: 5
           },
-          992:{
-              items:3
+          992: {
+              items: 3
           },
-          760:{
-            items:2
-        }
+          760: {
+              items: 2
+          }
       }
-  });
-  
-  $("#modal_trigger").leanModal({
-		top: 100,
-		overlay: 0.6,
-		closeButton: ".modal_close"
-});
+    });
 
-$(function() {
-		// Calling Login Form
-		$("#login_form").click(function() {
-				$(".social_login").hide();
-				$(".user_login").show();
-				return false;
-		});
-
-		// Calling Register Form
-		$("#register_form").click(function() {
-				$(".social_login").hide();
-				$(".user_register").show();
-				$(".header_title").text('Register');
-				return false;
-		});
-
-		// Going back to Social Forms
-		$(".back_btn").click(function() {
-				$(".user_login").hide();
-				$(".user_register").hide();
-				$(".social_login").show();
-				$(".header_title").text('Login');
-				return false;
-		});
-});
+    $("#modal_trigger").leanModal({
+        top: 100,
+        overlay: 0.6,
+        closeButton: ".modal_close"
+    });
 
   // Acc
   $(document).on("click", ".naccs .menu div", function() {
@@ -179,6 +153,10 @@ $(function() {
 	 $(window).on('load', function() {
 
         $('#js-preloader').addClass('loaded');
+         var urlParams = new URLSearchParams(window.location.search);
+         if (!urlParams.has("warning_accepted")) {
+             $("#modal_trigger").click();
+         }
 
     });
 

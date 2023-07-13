@@ -933,6 +933,11 @@ Banner Style
 
 .main-banner .left-content .first-button {
   margin-right: 15px;
+  margin-bottom: 15px;
+}
+.main-banner .left-content .not-last-button {
+  margin-right: 15px;
+  margin-bottom: 15px;
 }
 
 .main-banner .left-content .white-button {
@@ -1724,7 +1729,7 @@ PopUp
 }
 
 .btn_red {
-  background: #4b8ef1;
+  background: #ff0000;
   color: #FFF;
 }
 
@@ -1733,7 +1738,7 @@ PopUp
 }
 
 .btn_red:hover {
-  color: #2a2a2a;
+  color: #834444;
   background: #E4E4E2;
 }
 
@@ -1787,7 +1792,7 @@ a.btn_red {
   padding: 20px;
 }
 
-.social_login .social_box {
+.page_warning .page_warning_box {
   display: block;
   clear: both;
   padding: 10px;
@@ -1796,7 +1801,7 @@ a.btn_red {
   overflow: hidden;
 }
 
-.social_login .icon {
+.page_warning .icon {
   display: inline-block;
   
   padding: 5px 10px;
@@ -1807,15 +1812,15 @@ a.btn_red {
   text-align: center;
 }
 
-.social_login .fb .icon {
+.page_warning .fb .icon {
   background: #3B5998;
 }
 
-.social_login .google .icon {
+.page_warning .google .icon {
   background: #DD4B39;
 }
 
-.social_login .icon_title {
+.page_warning .icon_title {
   display: block;
   padding: 5px 0;
   float: left;
@@ -1824,12 +1829,12 @@ a.btn_red {
   color: #777;
 }
 
-.social_login .social_box:hover {
+.page_warning .page_warning_box:hover {
   background: #E4E4E2;
 }
 
 .centeredText {
-  color: #afafaf;
+  color: #000000;
   text-align: center;
   margin: 20px 0;
   clear: both;

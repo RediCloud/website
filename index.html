@@ -29,6 +29,28 @@
         </div>
     </div>
 </div>
+
+
+<div id="modal" class="popupContainer" style="display:none;">
+    <div class="popupHeader">
+        <span class="header_title">WARNING</span>
+    </div>
+    <a id="modal_trigger" href="#modal"></a>
+    <section class="popupBody">
+        <div class="page_warning">
+
+            <div class="centeredText">
+                <span>Note that Redicloud is still unstable. Please do not use it in a production environment.</span>
+            </div>
+
+            <div class="action_btns">
+                <div><a href="?warning_accepted=true" class="btn btn_red btn_red">Ok, I take note</a></div>
+            </div>
+        </div>
+    </section>
+</div>
+
+
 <header class="header-area header-sticky wow slideInDown" data-wow-duration="0.75s" data-wow-delay="0s">
     <div class="container">
         <div class="row">
@@ -45,8 +67,9 @@
                         <li class="scroll-to-section"><a href="#help">Help</a></li>
                         <li class="scroll-to-section"><a href="https://docs.redicloud.dev" target="_blank">Documentation</a></li>
                         <li>
-                            <div class="gradient-button"><a href="https://api.redicloud.dev/build/CloudV2_Build/latest/redicloud.zip"
-                                                            target="_blank"><i class="fa fa-download"></i> Download</a>
+                            <div class="gradient-button">
+                                <a href="https://api.redicloud.dev/build/CloudV2_Build/latest/redicloud.zip"
+                                   target="_blank"><i class="fa fa-download"></i> Download</a>
                             </div>
                         </li>
                     </ul>
@@ -77,9 +100,15 @@
                                         <a href="https://github.com/RediCloud/cloud-v2" target="_blank">Github <i
                                                 class="fa-brands fa-github"></i></a>
                                     </div>
-                                    <div class="white-button scroll-to-section">
+                                    <div class="white-button not-last-button scroll-to-section">
                                         <a href="https://discord.gg/G6f3uvsSqQ" target="_blank">Discord <i
                                                 class="fa-brands fa-discord"></i></a>
+                                    </div>
+                                    <div class="white-button not-last-button  scroll-to-section">
+                                        <a>Installations: <l class="metrics-registered-nodes"></l><i class="fa-solid fa-server"></i></a>
+                                    </div>
+                                    <div class="white-button scroll-to-section">
+                                        <a>Running: <l class="metrics-connected-nodes"></l><i class="fa-solid fa-server"></i></a>
                                     </div>
                                 </div>
                             </div>
@@ -198,7 +227,7 @@
                         </div>
                     </div>
                     <div class="gradient-button">
-                        <a href="https://api.redicloud.dev/build/CloudV2_Build/latest/redicloud.zip">Download</a>
+                        <a href="https://api.redicloud.dev/build/CloudV2_Build/latest/redicloud.zip">Download (Installations: <l class="metrics-registered-nodes">Loading...</l>)</a>
                     </div>
                 </div>
             </div>
@@ -337,5 +366,6 @@
 <script src="assets/js/popup.js"></script>
 <script src="assets/js/custom.js"></script>
 <script src="https://kit.fontawesome.com/351af82105.js" crossorigin="anonymous"></script>
+<script src="assets/js/metrics.js"></script>
 </body>
 </html>
