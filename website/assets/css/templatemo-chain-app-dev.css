@@ -1121,10 +1121,10 @@ About Us
 }
 
 .installation .box-item {
-  box-shadow: 0px 0px 15px rgba(0,0,0,0.07);
+  box-shadow: 0px 0px 15px rgba(0,0,0,0.1);
   padding: 10px 30px;
   background-color: #fff;
-  border-radius: 40px;
+  border-radius: 15px;
   margin-bottom: 30px;
 }
 
@@ -1713,6 +1713,7 @@ PopUp
 }
 
 .popupContainer {
+  display: none;
   position: center;
   width: 35%;
   height: auto;
@@ -1839,7 +1840,6 @@ a.btn_red {
   margin: 20px 0;
   clear: both;
   overflow: hidden;
-  text-transform: capitalize;
 }
 
 .user_login label {
