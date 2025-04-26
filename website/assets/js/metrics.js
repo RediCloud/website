@@ -1,4 +1,4 @@
-const metricsUrl = "https://api.redicloud.dev/metrics/CloudV2_Build/"
+const metricsUrl = "https://api.redicloud.dev/v2/metrics/master/"
 
 function setConnectedNodes(value) {
     for (let elementsByClassNameElement of document.getElementsByClassName("metrics-connected-nodes")) {
