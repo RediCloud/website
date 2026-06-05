@@ -93,8 +93,7 @@
 				<DarkMode class="ml-1 p-2 rounded-lg transition-colors cursor-pointer text-slate-500 hover:bg-slate-100 dark:hover:bg-slate-800" />
 
 				<a
-					href="https://api.redicloud.dev/v2/files/master/latest/redicloud.zip"
-					target="_blank"
+					href="/#installation"
 					class="ml-2 inline-flex items-center gap-2 px-5 py-2 rounded-xl bg-gradient-to-r from-redicloud-500 to-cyan-400 text-white text-sm font-medium hover:opacity-90 transition-opacity"
 				>
 					<DownloadSolid class="w-4 h-4" />
@@ -146,8 +145,7 @@
 					Changelog
 				</a>
 				<a
-					href="https://api.redicloud.dev/v2/files/master/latest/redicloud.zip"
-					target="_blank"
+					href="/#installation"
 					class="block mt-2 text-center px-5 py-2.5 rounded-xl bg-gradient-to-r from-redicloud-500 to-cyan-400 text-white text-sm font-medium"
 				>
 					Download

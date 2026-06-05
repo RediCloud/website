@@ -45,7 +45,7 @@
 					<li><a href="https://docs.redicloud.dev" target="_blank" class="text-sm text-slate-500 dark:text-slate-400 hover:text-redicloud-500 dark:hover:text-redicloud-400 transition-colors">Documentation</a></li>
 					<li><a href="https://docs.redicloud.dev/api" target="_blank" class="text-sm text-slate-500 dark:text-slate-400 hover:text-redicloud-500 dark:hover:text-redicloud-400 transition-colors">API</a></li>
 					<li><a href="https://github.com/RediCloud/cloud-v2" target="_blank" class="text-sm text-slate-500 dark:text-slate-400 hover:text-redicloud-500 dark:hover:text-redicloud-400 transition-colors">GitHub</a></li>
-					<li><a href="https://api.redicloud.dev/v2/files/master/latest/redicloud.zip" target="_blank" class="text-sm text-slate-500 dark:text-slate-400 hover:text-redicloud-500 dark:hover:text-redicloud-400 transition-colors">Download</a></li>
+					<li><a href="/#installation" class="text-sm text-slate-500 dark:text-slate-400 hover:text-redicloud-500 dark:hover:text-redicloud-400 transition-colors">Download</a></li>
 				</ul>
 			</div>
 

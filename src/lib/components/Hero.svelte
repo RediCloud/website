@@ -28,8 +28,7 @@
 				<!-- CTA Buttons -->
 				<div class="flex flex-wrap gap-4">
 					<a
-						href="https://api.redicloud.dev/v2/files/master/latest/redicloud.zip"
-						target="_blank"
+						href="/#installation"
 						class="inline-flex items-center gap-2 px-7 py-3.5 rounded-xl bg-gradient-to-r from-redicloud-500 to-cyan-400 text-white font-semibold glow-cyan hover:from-redicloud-600 hover:to-cyan-500 transition-all duration-300"
 					>
 						<DownloadSolid class="w-5 h-5" />
