@@ -1,34 +1,26 @@
 import { writable } from 'svelte/store';
 
-const METRICS_URL = 'https://api.redicloud.dev/v2/metrics/master/';
-
 export const connectedNodes = writable<string>('...');
 export const registeredNodes = writable<string>('...');
-
-async function fetchMetric(endpoint: string): Promise<string> {
-	try {
-		const response = await fetch(METRICS_URL + endpoint);
-		if (!response.ok) throw new Error(`HTTP ${response.status}`);
-		return await response.text();
-	} catch {
-		return '?';
-	}
-}
 
 let interval: ReturnType<typeof setInterval> | null = null;
 
 export function startMetricsPolling() {
 	async function update() {
-		const [connected, registered] = await Promise.all([
-			fetchMetric('nodes/online'),
-			fetchMetric('nodes/registered')
-		]);
-		connectedNodes.set(connected);
-		registeredNodes.set(registered);
+		try {
+			const response = await fetch('/api/metrics');
+			if (!response.ok) throw new Error(`HTTP ${response.status}`);
+			const data = await response.json();
+			connectedNodes.set(data.connectedNodes);
+			registeredNodes.set(data.registeredNodes);
+		} catch {
+			connectedNodes.set('?');
+			registeredNodes.set('?');
+		}
 	}
 
 	update();
-	interval = setInterval(update, 5000);
+	interval = setInterval(update, 15000); // Match server cache TTL
 }
 
 export function stopMetricsPolling() {

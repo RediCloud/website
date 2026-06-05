@@ -22,48 +22,36 @@
 </script>
 
 {#if visible}
-	<!-- svelte-ignore a11y_click_events_have_key_events -->
 	<!-- svelte-ignore a11y_no_static_element_interactions -->
-	<div class="modal-overlay" onclick={() => {}}>
-		<div class="popupContainer" style="display: block;">
-			<div class="popupHeader">
-				<span class="header_title">WARNING</span>
+	<div
+		class="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/60 backdrop-blur-sm"
+		onkeydown={(e) => { if (e.key === 'Escape') accept(); }}
+	>
+		<!-- svelte-ignore a11y_click_events_have_key_events -->
+		<!-- svelte-ignore a11y_no_static_element_interactions -->
+		<div
+			class="relative w-full max-w-md rounded-2xl border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800 shadow-2xl"
+			onclick={(e) => e.stopPropagation()}
+		>
+			<!-- Header -->
+			<div class="flex items-center justify-between p-5 border-b border-slate-200 dark:border-slate-700">
+				<h3 class="text-lg font-bold text-red-500">WARNING</h3>
 			</div>
-			<section class="popupBody">
-				<div class="page_warning">
-					<div class="centeredText">
-						<span>Note that Redicloud is still unstable. Please do not use it in a production environment.</span>
-					</div>
-					<div class="action_btns">
-						<div>
-							<button class="btn btn_red" onclick={accept}>Ok, I take note</button>
-						</div>
-					</div>
-				</div>
-			</section>
+			<!-- Body -->
+			<div class="p-5">
+				<p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+					Note that RediCloud is still unstable. Please do not use it in a production environment.
+				</p>
+			</div>
+			<!-- Footer -->
+			<div class="flex justify-end p-5 border-t border-slate-200 dark:border-slate-700">
+				<button
+					onclick={accept}
+					class="px-5 py-2.5 rounded-xl bg-gradient-to-r from-redicloud-500 to-cyan-400 text-white font-medium hover:opacity-90 transition-opacity cursor-pointer"
+				>
+					Ok, I take note
+				</button>
+			</div>
 		</div>
 	</div>
 {/if}
-
-<style>
-	.modal-overlay {
-		position: fixed;
-		z-index: 100;
-		top: 0;
-		left: 0;
-		width: 100%;
-		height: 100%;
-		background: rgba(0, 0, 0, 0.6);
-		display: flex;
-		align-items: center;
-		justify-content: center;
-	}
-
-	.popupContainer {
-		width: 35%;
-		min-width: 300px;
-		background: #fff;
-		padding: 7px 15px;
-		border-radius: 17px;
-	}
-</style>
