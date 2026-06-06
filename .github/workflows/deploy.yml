@@ -1,8 +1,13 @@
-# Deployment is handled by Cloudflare Pages (connected directly to this repo).
-# Build command: npm run build
-# Build output: .svelte-kit/cloudflare
+# Deployment is handled by Cloudflare Workers (connected directly to this repo).
+# Configuration lives in wrangler.jsonc at the repo root.
 #
-# Environment variables (set in Cloudflare Pages dashboard):
+# Cloudflare Workers Dashboard Settings:
+#   Build command: npm run build
+#   Deploy command: npx wrangler deploy
+#   Root directory: /
+#
+# Environment variables (set in Cloudflare dashboard):
+#   NODE_VERSION = 22 (REQUIRED - must match .nvmrc)
 #   GITHUB_TOKEN - GitHub API token for authenticated requests (optional, raises rate limit to 5k/h)
 #
 # This workflow is no longer needed for deployment.
