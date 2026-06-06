@@ -75,7 +75,7 @@
 									<p class="text-slate-500 dark:text-slate-400 text-sm mb-3">{step.description}</p>
 									{#if step.command}
 										<div class="relative group/code">
-											<div class="rounded-xl bg-white dark:bg-slate-950 border border-slate-300 dark:border-slate-700/50 p-3 overflow-x-auto select-none">
+											<div class="rounded-xl bg-white dark:bg-slate-950 border border-slate-300 dark:border-slate-700/50 p-3 overflow-x-auto select-all">
 												<pre class="font-mono text-sm pr-10 whitespace-nowrap"><code><span class="text-slate-400 dark:text-slate-500">$</span> <span class="text-slate-700 dark:text-slate-300">{step.command}</span></code></pre>
 											</div>
 											<button
